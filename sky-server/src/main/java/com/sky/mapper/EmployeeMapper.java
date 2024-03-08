@@ -37,4 +37,10 @@ public interface EmployeeMapper {
 
     //在EmployeeMapper.xml 中编写动态sql
     Page<Employee> pageQuery(EmployeePageQueryDTO employeePageQueryDTO);
+
+    /**
+     * 动态更新
+     * @param employee
+     */
+    void update(Employee employee);
 }
